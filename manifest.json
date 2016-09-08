@@ -1,7 +1,7 @@
 {
-  "name": "Jenkins Terminal Colors",
-  "version": "0.0.4",
-  "description": "Provides terminal colors in the 'Console' panels of Jenkins",
+  "name": "CircleCi Terminal Colors",
+  "version": "0.0.1",
+  "description": "Provides terminal colors for CircleCi logs in artifacts",
   "manifest_version": 2,
   "icons": {
     "16": "img/icon16.png",
@@ -17,16 +17,15 @@
       "*://*/view/*/job/*/*/consoleFull"
     ],
     "run_at": "document_end",
-    "css": ["css/jenkins-terminal-colors.css", "css/jenkins-terminal-colors-characters.css"],
-    "js": ["js/vendor/jquery-2.0.3.min.js", "js/jenkins-terminal-colors.js"]
+    "css": ["css/circleci-terminal-colors.css", "css/circleci-terminal-colors-characters.css"],
+    "js": ["js/vendor/jquery-2.0.3.min.js", "js/circleci-terminal-colors.js"]
   },
   {
     "matches": [
-      "*://*/job/*/*/consoleText",
-      "*://*/view/*/job/*/*/consoleText"
+      "*://*/**/circle-artifacts.*.log"
     ],
     "run_at": "document_end",
-    "css": ["css/jenkins-terminal-colors-text.css", "css/jenkins-terminal-colors-characters.css"],
-    "js": ["js/vendor/jquery-2.0.3.min.js", "js/jenkins-terminal-colors.js"]
+    "css": ["css/circleci-terminal-colors-text.css", "css/circleci-terminal-colors-characters.css"],
+    "js": ["js/vendor/jquery-2.0.3.min.js", "js/circleci-terminal-colors.js"]
   }]
 }

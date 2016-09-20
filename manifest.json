@@ -1,6 +1,6 @@
 {
   "name": "CircleCi Terminal Colors",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provides terminal colors for CircleCi logs in artifacts",
   "manifest_version": 2,
   "icons": {

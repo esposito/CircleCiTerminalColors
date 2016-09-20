@@ -1,12 +1,13 @@
 # CircleCi Terminal Colors
 
-**CircleCiTerminalColors** is a very lightweight Chrome extension that provides terminal colors for log excerpts with ANSI colors in CircleCi artifacts. It is heavily based on the [JenkinsTerminalColors](https://github.com/M6Web/JenkinsTerminalColors) extension.
+**CircleCiTerminalColors** is a very lightweight Chrome extension that provides terminal colors for CircleCi build output or log excerpts in artifacts containing ANSI color codes. It is heavily based on the [JenkinsTerminalColors](https://github.com/M6Web/JenkinsTerminalColors) extension.
 It uses the [black Solarized](http://ethanschoonover.com/solarized) theme.
 
 ## How to use
 
 * Install the Chrome extension
-* and open a CircleCi log artifact
+* open failed CircleCi build output
+* or open a CircleCi log artifact
 
 ## How to install for dev
 

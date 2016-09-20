@@ -11,18 +11,15 @@
   "web_accessible_resources": ["js/vendor/jquery-2.0.3.min.js", "js/vendor/jquery-2.0.3.min.map"],
   "content_scripts": [{
     "matches": [
-      "*://*/job/*/*/console",
-      "*://*/view/*/job/*/*/console",
-      "*://*/job/*/*/consoleFull",
-      "*://*/view/*/job/*/*/consoleFull"
+      "*://circleci.com/gh/**"
     ],
     "run_at": "document_end",
-    "css": ["css/circleci-terminal-colors.css", "css/circleci-terminal-colors-characters.css"],
-    "js": ["js/vendor/jquery-2.0.3.min.js", "js/circleci-terminal-colors.js"]
+    "css": ["css/circleci-terminal-colors-characters.css"],
+    "js": ["js/vendor/jquery-2.0.3.min.js", "js/circleci-build-output-colors.js"]
   },
   {
     "matches": [
-      "*://*/**/circle-artifacts.*.log"
+      "*://*.circle-artifacts.com/**/circle-artifacts.*.log"
     ],
     "run_at": "document_end",
     "css": ["css/circleci-terminal-colors-text.css", "css/circleci-terminal-colors-characters.css"],

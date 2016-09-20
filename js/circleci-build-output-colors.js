@@ -9,7 +9,7 @@ $(document).ready(function() {
     }
 
     function reformatExecute() {
-      $.each($('pre.build-test-output'), function(_, pre_element){
+      $.each($('pre.build-test-output span'), function(_, pre_element){
         var original_inner_html = pre_element.innerHTML;
         var reformated_inner_html = transformText(original_inner_html);
 
